@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Juliana Aponte Studio & Academy · Master Class de Uñas</title>
+<meta name="description" content="Master Class presencial de uñas · 13 módulos · Certificación profesional. Aquí empieza tu talento." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ========== DECOR NOISE / GRAIN OVERLAY ========== -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ========== SCROLL PROGRESS BAR ========== -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ========== CUSTOM CURSOR (desktop) ========== -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ========== NAVBAR ========== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="Juliana Aponte Studio & Academy">
+      <img src="LOGOS/LOGO JULIANA BEIGUE.png" alt="Juliana Aponte Studio & Academy" />
+    </a>
+    <nav class="nav__links" aria-label="principal">
+      <a href="#sobre">Sobre Juliana</a>
+      <a href="#pilares">Formación</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#inversion">Inversión</a>
+    </nav>
+    <a href="https://wa.me/573112068594?text=Hola%20Juliana%2C%20quiero%20info%20de%20la%20Master%20Class" target="_blank" rel="noopener" class="btn btn--gold nav__cta">Inscríbete</a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="#sobre">Sobre Juliana</a>
+    <a href="#pilares">Formación</a>
+    <a href="#modulos">Módulos</a>
+    <a href="#inversion">Inversión</a>
+    <a href="https://wa.me/573112068594" target="_blank" rel="noopener" class="btn btn--gold">Inscríbete</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <!-- Animated gold gradients background -->
+  <div class="hero__aurora" aria-hidden="true">
+    <div class="aurora aurora--1"></div>
+    <div class="aurora aurora--2"></div>
+    <div class="aurora aurora--3"></div>
+  </div>
+
+  <!-- Floating gold particles -->
+  <canvas class="hero__particles" id="heroParticles" aria-hidden="true"></canvas>
+
+  <!-- Big background number 01 -->
+  <div class="hero__bgnum" aria-hidden="true" data-parallax="0.25">01</div>
+
+  <!-- Floating model image (full height, no crop) -->
+  <div class="hero__model" id="heroPng">
+    <div class="hero__model-glow" aria-hidden="true"></div>
+    <img src="PNG/0002.png" alt="Juliana Aponte" />
+  </div>
+
+  <!-- Vertical labels -->
+  <div class="hero__vlabel hero__vlabel--left" aria-hidden="true">JULIANA APONTE · STUDIO & ACADEMY · MASTER CLASS</div>
+  <div class="hero__vlabel hero__vlabel--right" aria-hidden="true">Nº 01 — 2026 · OIBA SANTANDER · COLOMBIA</div>
+
+  <!-- Content -->
+  <div class="hero__content">
+    <span class="eyebrow hero__eyebrow" data-reveal>Master Class de Uñas · 13 módulos</span>
+    <h1 class="hero__title">
+      <span class="hero__line-wrap"><span data-word>Todo</span> <span data-word>gran</span> <span data-word>talento</span></span>
+      <span class="hero__line-wrap"><span data-word>empieza</span> <span data-word>desde</span> <span data-word class="italic">cero…</span></span>
+      <span class="hero__line-wrap hero__title-accent">
+        <span data-word>aquí</span> <span data-word>empieza</span> <span data-word>el</span> <span data-word>tuyo.</span>
+      </span>
+    </h1>
+
+    <p class="hero__sub" data-reveal>
+      Una formación presencial e intensiva — <strong>13 módulos</strong>, certificación profesional y kit de materiales de regalo.
+    </p>
+
+    <div class="hero__cta" data-reveal>
+      <a href="https://wa.me/573112068594?text=Hola%20Juliana%2C%20quiero%20inscribirme%20en%20la%20Master%20Class" target="_blank" rel="noopener" class="btn btn--gold">
+        <span>Quiero Inscribirme</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#modulos" class="btn btn--ghost">Ver los 13 módulos</a>
+    </div>
+  </div>
+
+  <!-- Bottom marquee strip -->
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Manicura Rusa</span><span>·</span>
+        <span>Acrílico</span><span>·</span>
+        <span>Polygel</span><span>·</span>
+        <span>Soft Gel</span><span>·</span>
+        <span>Sistema Dual</span><span>·</span>
+        <span>Nail Art</span><span>·</span>
+        <span>Bioseguridad</span><span>·</span>
+        <span>Certificación</span><span>·</span>
+        <span>Manicura Rusa</span><span>·</span>
+        <span>Acrílico</span><span>·</span>
+        <span>Polygel</span><span>·</span>
+        <span>Soft Gel</span><span>·</span>
+        <span>Sistema Dual</span><span>·</span>
+        <span>Nail Art</span><span>·</span>
+        <span>Bioseguridad</span><span>·</span>
+        <span>Certificación</span><span>·</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>scroll</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- ========== SOBRE JULIANA ========== -->
+<section class="about" id="sobre">
+  <div class="about__grid">
+    <figure class="about__photo" data-reveal>
+      <img src="FOTOS/Juli D b.jpg" alt="Juliana Aponte" />
+      <figcaption>Juliana Aponte · Directora & Formadora</figcaption>
+    </figure>
+    <div class="about__text">
+      <span class="eyebrow" data-reveal>Quién te formará</span>
+      <h2 class="h2" data-reveal>Doce años <em>afinando</em> un oficio<br/>que hoy comparte contigo.</h2>
+      <p data-reveal>
+        Soy Juliana, tengo 26 años y llevo <strong>12 años en el mundo de la belleza</strong> — uñas, maquillaje, pestañas, skincare. Desde hace años especializada en uñas como profesión, lenguaje y arte. Fundé <em>Juliana Aponte Studio & Academy</em> con una idea simple: que cada mujer que pase por aquí salga con técnica sólida, criterio estético y la confianza de una profesional.
+      </p>
+      <p data-reveal>
+        Esta Master Class es el camino más directo para aprender desde cero o perfeccionar lo que ya sabes. Sin atajos, sin relleno: puro estudio, práctica y detalle.
+      </p>
+      <div class="counters">
+        <div class="counter" data-reveal>
+          <span class="counter__num" data-count="12">0</span>
+          <span class="counter__label">años de experiencia</span>
+        </div>
+        <div class="counter" data-reveal>
+          <span class="counter__num" data-count="13">0</span>
+          <span class="counter__label">módulos completos</span>
+        </div>
+        <div class="counter" data-reveal>
+          <span class="counter__num" data-count="500" data-suffix="+">0</span>
+          <span class="counter__label">alumnas formadas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PILARES ========== -->
+<section class="pillars" id="pilares">
+  <header class="section-head" data-reveal>
+    <span class="eyebrow">Qué vas a vivir</span>
+    <h2 class="h2">Una formación pensada como <em>obra completa</em>.</h2>
+  </header>
+  <div class="pillars__grid">
+    <article class="pillar" data-reveal>
+      <svg viewBox="0 0 48 48" class="pillar__icon"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M14 24l7 7 13-14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Técnica</h3>
+      <p>Manicura rusa, acrílico, polygel, soft gel, sistema dual. Todo con la precisión que se ve y la que se siente.</p>
+    </article>
+    <article class="pillar" data-reveal>
+      <svg viewBox="0 0 48 48" class="pillar__icon"><path d="M24 6l4 12h12l-10 7 4 13-10-8-10 8 4-13-10-7h12z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      <h3>Estética</h3>
+      <p>Del trazo básico al nail art avanzado. Composición, tendencias y criterio propio para diseñar cada set.</p>
+    </article>
+    <article class="pillar" data-reveal>
+      <svg viewBox="0 0 48 48" class="pillar__icon"><path d="M24 4C14 10 10 18 10 26c0 10 6 18 14 18s14-8 14-18c0-8-4-16-14-22z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M24 18v12M18 24h12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <h3>Bioseguridad</h3>
+      <p>Anatomía de la uña, esterilización, protocolos y uso consciente del drill. La base no es opcional.</p>
+    </article>
+    <article class="pillar" data-reveal>
+      <svg viewBox="0 0 48 48" class="pillar__icon"><path d="M12 8h24v20l-12 12-12-12z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M18 20h12M18 26h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <h3>Certificación</h3>
+      <p>Proyecto final sobre modelo real, evaluación y certificado que respalda tu nuevo oficio.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========== MÓDULOS ========== -->
+<section class="modules" id="modulos">
+  <header class="section-head" data-reveal>
+    <span class="eyebrow">Programa completo</span>
+    <h2 class="h2"><em>13 módulos.</em> Un recorrido de principio a fin.</h2>
+    <p class="section-sub">Desde los fundamentos de bioseguridad hasta la certificación final sobre modelo real.</p>
+  </header>
+
+  <div class="modules__stack" id="modulesStack">
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">01</span>
+        <span class="mod-card__chip">Fundamentos</span>
+        <h3>Bioseguridad y Fundamentos Profesionales</h3>
+        <p>Antes de tocar una uña, necesitas saber cómo protegerte y proteger a tu clienta. Aprenderás los protocolos de higiene y esterilización que distinguen a una profesional, la estructura interna y externa de la uña para entender cómo trabajarla correctamente, y el uso adecuado de cada herramienta y producto. <strong>La base más importante de toda tu carrera.</strong></p>
+        <ul><li>Protocolos de bioseguridad</li><li>Anatomía de la uña</li><li>Herramientas y su uso correcto</li><li>Lectura e interpretación de productos</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">02</span>
+        <span class="mod-card__chip">Técnica</span>
+        <h3>Manicura Rusa y Esmaltado Semipermanente</h3>
+        <p>La manicura rusa es la técnica en seco más demandada del mercado: limpia, duradera y de acabado impecable. Aprenderás a manejar el drill de forma precisa para retirar cutícula sin dañar la piel, aplicar el esmaltado semipermanente de manera profesional y lograr un resultado que dure semanas. <strong>Una de las técnicas más cotizadas para generar ingresos desde el primer día.</strong></p>
+        <ul><li>Uso profesional del drill</li><li>Técnica de manicura rusa paso a paso</li><li>Aplicación y sellado del esmaltado semipermanente</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">03</span>
+        <span class="mod-card__chip">Estética</span>
+        <h3>Pedicura Estética con Drill</h3>
+        <p>La pedicura con drill es un servicio de alto valor que muy pocas profesionales dominan bien. Aprenderás a trabajar los pies con precisión estética: retirar durezas, callos y cutículas sin causar molestias, y terminar con un esmaltado semipermanente perfecto. <strong>Un servicio completo que tus clientas van a querer repetir cada mes.</strong></p>
+        <ul><li>Selección y manejo de brocas según el caso</li><li>Eliminación profesional de durezas y callos</li><li>Esmaltado semipermanente en pies</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">04</span>
+        <span class="mod-card__chip">Nail Art</span>
+        <h3>Decoración Básica</h3>
+        <p>El nail art es lo que hace que tus trabajos se vean en redes y generen nuevas clientas. Aquí aprenderás los primeros pasos del diseño: trazos limpios, flores, figuras geométricas, efectos cromados y degradados. Todo con técnicas comerciales que se ejecutan rápido y se ven increíble. <strong>El punto de partida de tu identidad visual como profesional.</strong></p>
+        <ul><li>Trazos básicos con pincel fino</li><li>Diseños sencillos y comerciales</li><li>Efectos en tendencia: cromados, degradados, texturas</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">05</span>
+        <span class="mod-card__chip">Soft Gel</span>
+        <h3>Sistema Soft Gel (Press On)</h3>
+        <p>El sistema Soft Gel o Press On es una de las técnicas de mayor crecimiento en el mercado beauty actual. Rápida de aplicar, con resultados naturales y modernos, es perfecta para clientas que quieren uñas largas sin el peso del acrílico. Aprenderás a trabajar la estructura, los encapsulados y el acabado perfecto. <strong>Ideal para diferenciarte y ampliar tu catálogo de servicios.</strong></p>
+        <ul><li>Preparación y aplicación correcta</li><li>Estructuración y longitud</li><li>Técnica de limado y sellado</li><li>Encapsulados y diseños integrados</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">06</span>
+        <span class="mod-card__chip">Sistema Dual</span>
+        <h3>Sistema Dual</h3>
+        <p>El sistema dual combina lo mejor del gel y el polygel usando cánulas de aplicación que permiten un control total del producto. Es una técnica versátil y resistente que se adapta a distintas formas y longitudes. Aprenderás a construir la uña desde cero con moldes, controlar la consistencia del material y lograr estructuras perfectas. <strong>Una técnica profesional de alto nivel muy valorada en el sector.</strong></p>
+        <ul><li>Aplicación con moldes dual y cánulas</li><li>Control de consistencia del producto</li><li>Estructuración y forma correcta</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">07</span>
+        <span class="mod-card__chip">Acrílico</span>
+        <h3>Acrílico Inicial</h3>
+        <p>El acrílico sigue siendo uno de los sistemas más solicitados y mejor pagados del sector. En este módulo aprenderás desde cero: la proporción correcta entre polvo y líquido, la técnica con tips para construir extensiones, y cómo limarlas hasta lograr un acabado natural y elegante. <strong>Dominar el acrílico abre la puerta a los trabajos más completos y mejor remunerados.</strong></p>
+        <ul><li>Mezcla y aplicación con tips</li><li>Construcción de longitud y estructura</li><li>Técnica de limado para acabados naturales</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">08</span>
+        <span class="mod-card__chip">Polygel</span>
+        <h3>Polygel Inicial</h3>
+        <p>El polygel es el material favorito de muchas nail artists por su ligereza, flexibilidad y facilidad de moldeo. A diferencia del acrílico, no tiene olor fuerte y se trabaja sin prisa. En este módulo aprenderás a manejarlo desde cero: aplicación, moldeado con slip solution, estructura correcta y limado final. <strong>Un sistema moderno, limpio y con resultados espectaculares.</strong></p>
+        <ul><li>Aplicación y manejo con slip solution</li><li>Control del producto sin burbujas ni excesos</li><li>Moldeado y construcción de estructura</li><li>Limado y acabado profesional</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">09</span>
+        <span class="mod-card__chip">Nail Art · Intermedio</span>
+        <h3>Decoración Intermedia</h3>
+        <p>Ya dominas los trazos básicos, ahora es momento de subir el nivel. En este módulo explorarás técnicas con más detalle y composición: diseños florales complejos, líneas finas, arte abstracto, nail art con gel de colores y efectos especiales. Aprenderás a combinar elementos para crear sets cohesivos y personalizados. <strong>El tipo de trabajo que genera likes, compartidos y nuevas clientas.</strong></p>
+        <ul><li>Diseños florales y artísticos elaborados</li><li>Nail art con gel de colores y pigmentos</li><li>Composición y equilibrio estético en cada set</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">10</span>
+        <span class="mod-card__chip">Acrílico · Intermedio</span>
+        <h3>Acrílico Intermedio</h3>
+        <p>Con las bases del acrílico claras, ahora aprenderás a trabajar sin tips: usarás moldes de papel para esculpir la uña directamente, creando formas más naturales, estilizadas y personalizadas. También dominarás los encapsulados —flores secas, foils, piedras— y aprenderás a hacer retoques y mantenimientos correctos para que tus trabajos duren perfectos. <strong>El nivel que te convierte en una nail artist completa.</strong></p>
+        <ul><li>Esculpido en molde de papel sin tips</li><li>Encapsulados: flores, foils y elementos decorativos</li><li>Retoques y mantenimientos profesionales</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">11</span>
+        <span class="mod-card__chip">Polygel · Intermedio</span>
+        <h3>Polygel Intermedio</h3>
+        <p>Llevarás el polygel a otro nivel: aprenderás a esculpir directamente en molde de papel para lograr formas personalizadas, a realizar encapsulados elegantes y duraderos, y a ejecutar retoques y mantenimientos que mantengan el trabajo impecable con el paso del tiempo. <strong>Polygel avanzado = trabajos de alta gama que tus clientas no querrán cambiar por nada.</strong></p>
+        <ul><li>Esculpido en molde de papel con polygel</li><li>Encapsulados y efectos especiales</li><li>Mantenimientos y rellenos correctos</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">12</span>
+        <span class="mod-card__chip">Nail Art · Avanzado</span>
+        <h3>Decoración Avanzada</h3>
+        <p>El módulo más creativo de todo el programa. Aquí aprenderás a ejecutar diseños complejos de alto impacto: nail art 3D, técnicas mixtas, pintura artística a mano alzada, uso de elementos como gemas, charms y texturas combinadas. También estudiarás las tendencias actuales para que tus trabajos siempre estén a la vanguardia. <strong>El tipo de uñas que se vuelve viral y posiciona tu marca personal.</strong></p>
+        <ul><li>Nail art 3D y pintura artística a mano alzada</li><li>Técnicas mixtas y uso de materiales especiales</li><li>Tendencias actuales aplicadas a diseños reales</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+    <article class="mod-card mod-card--final" data-tilt>
+      <div class="mod-card__inner">
+        <span class="mod-card__num">13</span>
+        <span class="mod-card__chip mod-card__chip--gold">Certificación</span>
+        <h3>Proyecto Final y Certificación</h3>
+        <p>El cierre más emocionante de tu formación. Aplicarás todo lo aprendido en un set completo sobre modelo real: desde la preparación de la uña hasta el diseño final, integrando técnica, estética y criterio profesional. Serás evaluada por Juliana y recibirás tu <strong>certificado oficial de Juliana Aponte Studio & Academy</strong> — el respaldo que necesitas para comenzar a trabajar con confianza y cobrar lo que mereces.</p>
+        <ul><li>Set completo aplicado en modelo real</li><li>Evaluación técnica y estética final</li><li>Certificación profesional avalada por la academia</li></ul>
+        <div class="mod-card__shine"></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========== EL ESPACIO ========== -->
+<section class="space">
+  <div class="space__grid">
+    <div class="space__text">
+      <span class="eyebrow" data-reveal>El espacio</span>
+      <h2 class="h2" data-reveal>Un estudio pensado<br/>para <em>formarte</em>.</h2>
+      <p data-reveal>Un entorno profesional, cuidado en cada detalle, donde cada módulo se practica con las herramientas reales que usarás el día que atiendas a tu primera clienta.</p>
+      <div class="space__dots" data-reveal>
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <figure class="space__image" data-reveal>
+      <img src="FOTOS%20DEL%20LUGAR/L01.jpeg" alt="Estudio Juliana Aponte" />
+    </figure>
+  </div>
+</section>
+
+<!-- ========== REGALO / BONUS · COLABORACIÓN ========== -->
+<section class="bonus" id="bonus">
+  <!-- Animated gold aurora bg -->
+  <div class="bonus__aurora" aria-hidden="true">
+    <div class="bonus__ray bonus__ray--1"></div>
+    <div class="bonus__ray bonus__ray--2"></div>
+    <div class="bonus__ray bonus__ray--3"></div>
+  </div>
+
+  <div class="bonus__inner">
+    <!-- Partnership header -->
+    <div class="bonus__collab" data-reveal>
+      <div class="bonus__collab-line"></div>
+      <span class="bonus__collab-label">Una colaboración entre</span>
+      <div class="bonus__collab-line"></div>
+    </div>
+
+    <div class="bonus__logos" data-reveal>
+      <a href="https://www.instagram.com/juliana.aponte_studio.academy/?hl=es-la" target="_blank" rel="noopener" class="bonus__logo bonus__logo--juliana" aria-label="Juliana Aponte Studio & Academy en Instagram">
+        <img src="LOGOS/LOGO JULIANA BLANCO.png" alt="Juliana Aponte Studio & Academy" />
+        <span class="bonus__logo-hint">@juliana.aponte_studio.academy</span>
+      </a>
+      <div class="bonus__cross" aria-hidden="true">
+        <svg viewBox="0 0 60 60" width="54" height="54">
+          <defs>
+            <linearGradient id="bonusCross" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F1D9A8"/>
+              <stop offset="0.5" stop-color="#C9A36B"/>
+              <stop offset="1" stop-color="#8A6A3B"/>
+            </linearGradient>
+          </defs>
+          <circle cx="30" cy="30" r="28" fill="none" stroke="url(#bonusCross)" stroke-width="1" stroke-dasharray="3 4"/>
+          <path d="M20 20 L40 40 M40 20 L20 40" stroke="url(#bonusCross)" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+      <a href="https://www.instagram.com/agenciamarketoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="bonus__logo bonus__logo--market" aria-label="Agencia Market en Instagram">
+        <img src="AGENCIA/Logo Market.png" alt="Agencia Market" />
+        <span class="bonus__logo-hint">@agenciamarketoficial</span>
+      </a>
+    </div>
+
+    <!-- Bonus card -->
+    <article class="bonus__card" data-reveal>
+      <div class="bonus__card-glow" aria-hidden="true"></div>
+
+      <div class="bonus__icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 24h48v8H8z"/>
+          <path d="M12 32v24h40V32"/>
+          <path d="M32 24v32"/>
+          <path d="M32 24c-6 0-12-4-12-10s4-8 8-8 4 6 4 10v8z" fill="rgba(201,163,107,.15)"/>
+          <path d="M32 24c6 0 12-4 12-10s-4-8-8-8-4 6-4 10v8z" fill="rgba(201,163,107,.15)"/>
+        </svg>
+      </div>
+
+      <span class="bonus__chip">
+        <svg viewBox="0 0 12 12" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M6 0l1.5 3.5L11 5 7.5 6.5 6 10 4.5 6.5 1 5l3.5-1.5z"/></svg>
+        REGALO ESPECIAL INCLUIDO
+      </span>
+
+      <h2 class="bonus__title">
+        Marketing, Contenido<br/>
+        <em>&amp; Finanzas</em>
+      </h2>
+
+      <p class="bonus__lead">
+        Clase adicional para enseñarte cómo convertir tu conocimiento en una <strong>fuente real de ingresos</strong>.
+      </p>
+
+      <ul class="bonus__list">
+        <li><span class="bonus__li-mark">◆</span> Cómo tomar fotografías profesionales de tus trabajos</li>
+        <li><span class="bonus__li-mark">◆</span> Creación de contenido para redes sociales y Tips</li>
+        <li><span class="bonus__li-mark">◆</span> Estrategias para conseguir clientas</li>
+        <li><span class="bonus__li-mark">◆</span> Cómo organizar tus Redes Sociales</li>
+        <li><span class="bonus__li-mark">◆</span> Organización básica de ingresos y finanzas personales</li>
+      </ul>
+
+      <div class="bonus__seal" aria-hidden="true">
+        <svg viewBox="0 0 160 160" width="100%" height="100%">
+          <defs>
+            <path id="bonusCircle" d="M 80,80 m -62,0 a 62,62 0 1,1 124,0 a 62,62 0 1,1 -124,0" />
+          </defs>
+          <text fill="rgba(201,163,107,.4)" font-family="Outfit" font-size="10" letter-spacing="4">
+            <textPath href="#bonusCircle">BONUS · EXCLUSIVO · MASTER CLASS · BONUS · EXCLUSIVO · MASTER CLASS ·</textPath>
+          </text>
+          <circle cx="80" cy="80" r="14" fill="none" stroke="rgba(201,163,107,.5)" stroke-width="1"/>
+          <path d="M80 66 l3 7 7 1 -5 5 1 7 -6 -3 -6 3 1 -7 -5 -5 7 -1z" fill="rgba(201,163,107,.6)"/>
+        </svg>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ========== INVERSIÓN ========== -->
+<section class="invest" id="inversion">
+  <div class="invest__card" data-reveal>
+    <span class="eyebrow">La inversión</span>
+    <h2 class="invest__title">Aquí comienza todo.,<br/><em>13 módulos que lo cambian todo.</em></h2>
+
+    <div class="invest__price">
+      <span class="invest__currency">COP</span>
+      <span class="invest__amount">$3.500.000</span>
+    </div>
+
+    <ul class="invest__list">
+      <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Clases<strong>Semi Personalizadas</strong></li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Inscripción de <strong>$500.000</strong> (incluida en el valor total)</li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>13 módulos</strong> intensivos, 100% presenciales</li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>13 módulos</strong> de bioseguridad a certificación</li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Kit de materiales de iniciación</strong> de regalo</li>
+      <li><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Proyecto final sobre modelo real + certificación</li>
+    </ul>
+
+    <a href="https://wa.me/573112068594?text=Hola%20Juliana%2C%20quiero%20reservar%20mi%20cupo%20en%20la%20Master%20Class" target="_blank" rel="noopener" class="btn btn--gold btn--big">
+      Reservar mi cupo por WhatsApp
+    </a>
+    <p class="invest__note">Cupos limitados · Se confirma con la inscripción de $500.000.</p>
+  </div>
+</section>
+
+
+
+<!-- ========== CTA FINAL ========== -->
+<section class="final-cta">
+  <div class="final-cta__inner">
+    <h2 class="final-cta__title" data-reveal>
+      <em>Aquí</em> empieza<br/>tu talento.
+    </h2>
+    <p data-reveal>Hablemos. Te cuento fechas, cupos y resolvemos todas tus dudas.</p>
+    <div class="final-cta__btns" data-reveal>
+      <a href="https://wa.me/573112068594" target="_blank" rel="noopener" class="btn btn--gold btn--big">WhatsApp +57 311 2068594</a>
+      <a href="https://www.instagram.com/juliana.aponte_studio.academy/?hl=es-la" target="_blank" rel="noopener" class="btn btn--ghost btn--big">@juliana.aponte_studio.academy</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <img src="LOGOS/LOGO JULIANA BLANCO.png" alt="Juliana Aponte Studio & Academy" class="footer__logo" />
+    <div class="footer__cols">
+      <div>
+        <span class="footer__label">Contacto</span>
+        <a href="tel:+573112068594">+57 311 2068594</a>
+        <a href="mailto:studioacademy.juliana@gmail.com">studioacademy.juliana@gmail.com</a>
+      </div>
+      <div>
+        <span class="footer__label">Síguenos</span>
+        <a href="https://www.instagram.com/juliana.aponte_studio.academy/?hl=es-la" target="_blank" rel="noopener">@juliana.aponte_studio.academy</a>
+      </div>
+      <div>
+        <span class="footer__label">Navegación</span>
+        <a href="#sobre">Sobre Juliana</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#inversion">Inversión</a>
+      </div>
+    </div>
+    <small class="footer__copy">© <span id="year"></span> Juliana Aponte Studio & Academy · Todos los derechos reservados.</small>
+  </div>
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/573112068594" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 .5C7.44.5.5 7.44.5 16c0 2.82.74 5.56 2.14 7.98L.5 31.5l7.74-2.03A15.46 15.46 0 0 0 16 31.5C24.56 31.5 31.5 24.56 31.5 16S24.56.5 16 .5zm0 28.2c-2.46 0-4.87-.66-6.97-1.9l-.5-.3-4.6 1.2 1.23-4.48-.33-.52A12.7 12.7 0 1 1 28.7 16c0 7-5.7 12.7-12.7 12.7zm7-9.5c-.38-.2-2.25-1.1-2.6-1.23-.35-.13-.6-.2-.86.2-.25.38-.98 1.22-1.2 1.48-.22.25-.44.28-.82.1-.38-.2-1.6-.6-3.06-1.9-1.13-1-1.9-2.25-2.12-2.63-.22-.38-.02-.58.17-.77.17-.17.38-.44.57-.66.2-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.1-.2-.86-2.06-1.17-2.82-.3-.73-.6-.63-.86-.65h-.74c-.25 0-.66.1-1 .47-.35.38-1.32 1.3-1.32 3.15s1.35 3.66 1.54 3.9c.2.25 2.66 4.06 6.44 5.7.9.4 1.6.63 2.15.8.9.3 1.72.25 2.37.15.72-.1 2.25-.92 2.57-1.82.32-.9.32-1.66.22-1.82-.1-.15-.35-.25-.73-.43z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
