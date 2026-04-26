@@ -17,6 +17,68 @@
     })(window, document, "clarity", "script", "wge6g3w7wq");
 </script>
 <script defer src="https://cdn.vercel-analytics.com/v1/va.js"></script>
+<!-- WebTrack Pro | Código de Seguimiento -->
+<!-- Sitio: https://juliana-aponte-studio-academy.vercel.app/ | Código: WTP-w1777187473359-47xjzi -->
+<script>
+  (function(w, d, s, t) {
+    w._wtp = w._wtp || [];
+    w._wtp.push({ trackingCode: 'WTP-w1777187473359-47xjzi' });
+
+    function sendEvent(type, data) {
+      var payload = Object.assign({ type: type, ts: Date.now(), page: location.pathname }, data || {});
+      fetch('https://api.webtrackpro.com/collect', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        keepalive: true
+      }).catch(function(){});
+    }
+
+    // Pageview
+    sendEvent('pageview');
+
+    // Clicks
+    d.addEventListener('click', function(e) {
+      var el = e.target;
+      sendEvent('click', {
+        element: el.id || el.className || el.tagName,
+        x: e.clientX, y: e.clientY
+      });
+    });
+
+    // Scroll depth
+    var maxScroll = 0;
+    window.addEventListener('scroll', function() {
+      var pct = Math.round((window.scrollY / (d.body.scrollHeight - window.innerHeight)) * 100);
+      if (pct > maxScroll) {
+        maxScroll = pct;
+        if ([25, 50, 75, 100].indexOf(pct) > -1) {
+          sendEvent('scroll', { depth: pct });
+        }
+      }
+    });
+
+    // Tiempo en página
+    var startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+      sendEvent('exit', { duration: Math.round((Date.now() - startTime) / 1000) });
+    });
+
+    // Formularios
+    d.addEventListener('submit', function(e) {
+      var form = e.target;
+      sendEvent('form_submit', { formId: form.id || form.action });
+    });
+
+    // Performance
+    window.addEventListener('load', function() {
+      var perf = performance.timing;
+      sendEvent('performance', { loadTime: perf.loadEventEnd - perf.navigationStart });
+    });
+
+  })(window, document);
+</script>
+<!-- Fin WebTrack Pro -->
 </head>
 <body>
 
